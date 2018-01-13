@@ -5,11 +5,11 @@ if (isset($_GET['submit'])) {
 $irl = "http://api.steampowered.com/ISteamUser/GetPlayerBans/v1//?key=FBE6A5C249453A8516A55AAD5F87973F&steamids=$id&format=json";
 $url = file_get_contents("$irl");
 $json = json_decode($url, true);
-//  Fetchuj podatke
+//  FETCH
 $vac = $json['players'][0]['VACBanned'];
 $id = $json['players'][0]['SteamId'];
 $gameban = $json['players'][0]['NumberOfGameBans'];
-// Printaj majstore
+// Echo "fix this pls"
 echo "<br>";
 echo "<br>";
 echo "<br>";
